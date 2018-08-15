@@ -133,8 +133,8 @@ public class Move
 					{
 					case 0:
 					case 3:
-						game.st.block[i][0] = (byte) (game.st.block[1][0] - x);
-						game.st.block[i][1] = (byte) (game.st.block[1][1] - y);
+						game.st.block[i][0] = (byte) (game.st.block[1][0] + x);
+						game.st.block[i][1] = (byte) (game.st.block[1][1] + y);
 						break;
 					case 5:
 					case 6:
