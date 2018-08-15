@@ -50,4 +50,26 @@ public class Right extends SuperBlock
 		}
 	}
 
+	@Override
+	public void next(TETRIS ts)
+	{
+		// TODO 自動生成されたメソッド・スタブ
+		switch(ts.st.ndirection)
+		{
+		case 0:
+		case 2:
+			ts.st.nblock[0] = 2;
+			ts.st.nblock[1] = 6;
+			ts.st.nblock[2] = 5;
+			ts.st.nblock[3] = 9;
+			break;
+		case 1:
+		case 3:
+			ts.st.nblock[0] = 1;
+			ts.st.nblock[1] = 2;
+			ts.st.nblock[2] = 6;
+			ts.st.nblock[3] = 7;
+			break;
+		}
+	}
 }

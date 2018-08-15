@@ -212,14 +212,21 @@ public class Move
 					{
 						game.st.Stage[game.st.block[i][0]][game.st.block[i][1]] = (byte) (game.st.now+3);
 					}
-					game.st.now = game.st.r.nextInt(game.st.blo.length);
+					/*game.st.now = game.st.r.nextInt(game.st.blo.length);
 					game.st.direction = game.st.r.nextInt(4);
+					game.st.blo[game.st.now].init(game);//*/
+					/*game.st.now = game.st.next;
+					game.st.direction = game.st.ndirection;
+					game.st.next = game.st.r.nextInt(game.st.blo.length);
+					game.st.ndirection = game.st.r.nextInt(4);
 					game.st.blo[game.st.now].init(game);
+					game.st.blo[game.st.next].next(game);//*/
+					game.st.nbloena = true;
 				}
 				if(b) break;
 			}
-			game.st.Remove(game);
-			game.st.Gameover(game);
+			game.st.RemoveCheque(game);
+			//game.st.Gameover(game);
 		}
 		else if(!game.kmState.Key.get(game.UP) && this.pressed[3])
 		{

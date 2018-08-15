@@ -33,4 +33,13 @@ public class Square extends SuperBlock
 		ts.st.block[3][1]=1;
 	}
 
+	@Override
+	public void next(TETRIS ts)
+	{
+		// TODO 自動生成されたメソッド・スタブ
+		ts.st.nblock[0] = 5;
+		ts.st.nblock[1] = 6;
+		ts.st.nblock[2] = 9;
+		ts.st.nblock[3] = 10;
+	}
 }

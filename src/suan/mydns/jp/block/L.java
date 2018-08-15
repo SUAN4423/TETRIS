@@ -68,4 +68,36 @@ public class L extends SuperBlock
 		}
 	}
 
+	@Override
+	public void next(TETRIS ts)
+	{
+		// TODO 自動生成されたメソッド・スタブ
+		switch(ts.st.ndirection)
+		{
+		case 0:
+			ts.st.nblock[0] = 1;
+			ts.st.nblock[1] = 5;
+			ts.st.nblock[2] = 9;
+			ts.st.nblock[3] = 10;
+			break;
+		case 1:
+			ts.st.nblock[0] = 5;
+			ts.st.nblock[1] = 6;
+			ts.st.nblock[2] = 7;
+			ts.st.nblock[3] = 3;
+			break;
+		case 2:
+			ts.st.nblock[0] = 1;
+			ts.st.nblock[1] = 2;
+			ts.st.nblock[2] = 6;
+			ts.st.nblock[3] = 10;
+			break;
+		case 3:
+			ts.st.nblock[0] = 1;
+			ts.st.nblock[1] = 2;
+			ts.st.nblock[2] = 3;
+			ts.st.nblock[3] = 5;
+			break;
+		}
+	}
 }
